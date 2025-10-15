@@ -2,9 +2,9 @@ use std::io::{Read, Seek, SeekFrom};
 
 use byteorder::{ReadBytesExt, LE};
 
-use super::consts::*;
-use super::error::MpqError;
-use super::header::*;
+use crate::core::consts::*;
+use crate::core::error::MpqError;
+use crate::core::header::*;
 
 #[derive(Debug)]
 pub(crate) struct Seeker<R: Read + Seek> {

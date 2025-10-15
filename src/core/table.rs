@@ -3,10 +3,10 @@ use std::io::{Read, Seek, Write};
 
 use byteorder::{ReadBytesExt, WriteBytesExt, LE};
 
-use super::consts::*;
-use super::error::MpqError;
-use super::seeker::*;
-use super::util::*;
+use crate::core::consts::*;
+use crate::core::error::MpqError;
+use crate::core::seeker::*;
+use crate::core::util::*;
 
 #[derive(Debug)]
 pub(crate) struct FileHashTable {

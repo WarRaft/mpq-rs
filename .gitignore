@@ -24,5 +24,6 @@ assets/build-report.txt
 #.idea/
 /.idea/
 /test-data/scan/
+/test-data/maps/
 /test-data/convert/
 /bin/

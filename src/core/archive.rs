@@ -1,9 +1,9 @@
 use std::io::{Read, Seek};
 
-use super::error::*;
-use super::seeker::*;
-use super::table::*;
-use super::util::*;
+use crate::core::error::*;
+use crate::core::seeker::*;
+use crate::core::table::*;
+use crate::core::util::*;
 
 #[derive(Debug)]
 /// Implementation of a MoPaQ archive viewer.

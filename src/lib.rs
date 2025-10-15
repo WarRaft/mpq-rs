@@ -71,17 +71,10 @@
 
 #![allow(dead_code)]
 
-pub(crate) mod consts;
-pub(crate) mod header;
-pub(crate) mod seeker;
-pub(crate) mod table;
-pub(crate) mod util;
+pub mod core;
+pub mod run;
 
-pub(crate) mod archive;
-pub(crate) mod creator;
-pub(crate) mod error;
-
-pub use archive::Archive;
-pub use creator::Creator;
-pub use creator::FileOptions;
-pub use error::MpqError;
+pub use core::archive::Archive;
+pub use core::creator::Creator;
+pub use core::creator::FileOptions;
+pub use core::error::MpqError;

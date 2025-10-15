@@ -7,10 +7,10 @@ use byteorder::{WriteBytesExt, LE};
 use indexmap::IndexMap;
 
 // use super::archive::Archive;
-use super::consts::*;
-use super::header::*;
-use super::table::*;
-use super::util::*;
+use crate::core::consts::*;
+use crate::core::header::*;
+use crate::core::table::*;
+use crate::core::util::*;
 
 #[derive(Debug, PartialEq, Eq, Hash, Clone, Copy)]
 struct FileKey {

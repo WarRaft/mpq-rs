@@ -4,8 +4,8 @@ use byte_slice_cast::AsMutSliceOf;
 
 use lazy_static::lazy_static;
 
-use super::consts::*;
-use super::error::*;
+use crate::core::consts::*;
+use crate::core::error::*;
 
 lazy_static! {
     static ref CRYPTO_TABLE: [u32; 0x500] = generate_crypto_table();

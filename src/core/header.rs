@@ -3,8 +3,8 @@ use std::io::{Read, Write};
 
 use byteorder::{ReadBytesExt, WriteBytesExt, LE};
 
-use super::consts::*;
-use super::error::MpqError;
+use crate::core::consts::*;
+use crate::core::error::MpqError;
 
 #[derive(Debug)]
 pub(crate) struct FileHeader {
